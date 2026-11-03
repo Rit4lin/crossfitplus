@@ -49,3 +49,14 @@
 @media(max-width:1120px){.insights-grid{grid-template-columns:1fr 1fr}.insight-chart{grid-column:1/-1;grid-row:auto}.distribution-body{gap:14px}.insights{margin:30px 0 38px}}
 @media(max-width:690px){.insights-grid{grid-template-columns:1fr;gap:12px}.insight-chart{grid-column:auto}.insights-head{align-items:start;flex-direction:column;gap:13px}.insights-selector{align-self:flex-start}.insight-card{padding:17px}.insights-head p{font-size:11px}.insight-chart .insight-title{font-size:15px}.insight-amount{font-size:32px}.load-svg{margin-top:15px}.distribution-body{justify-content:flex-start;gap:34px}.insights{margin:26px 0 33px}.daily-bars{margin-top:12px}}
 @media(prefers-reduced-motion:reduce){.daily-fill{transition:none}}
+
+
+/* La acción de la portada se traslada al archivo semanal, no al encabezado. */
+.hero-cta{display:none!important}
+.hero{min-height:263px}
+.hero-inner{padding-bottom:35px}
+.sidebar-feature{display:none!important}
+@media(max-width:560px){
+  .hero{min-height:273px}
+  .hero-inner{padding-bottom:27px}
+}
