@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101310">
+  <meta name="description" content="CrossFit Plus. Tu programación semanal de entrenamiento, organizada en un solo lugar.">
+  <meta property="og:title" content="CrossFit Plus | Programación semanal">
+  <meta property="og:description" content="Accede a tu programación de entrenamiento semana a semana.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+  <title>CrossFit Plus | Programación semanal</title>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" aria-label="Menú principal">
+      <a class="logo" href="./" aria-label="CrossFit Plus, inicio">
+        <span class="logo-symbol" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><rect x="11" y="19" width="7" height="10" rx="2" stroke="currentColor" stroke-width="2.8"/><rect x="30" y="19" width="7" height="10" rx="2" stroke="currentColor" stroke-width="2.8"/><path d="M18 24h12M6 16v16M42 16v16" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/><path d="m23 12-3 11h7l-3 13" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="logo-word">CROSSFIT<span>PLUS</span><b>.</b></span>
+      </a>
+      <div class="sidebar-section-label">TU ESPACIO</div>
+      <nav class="main-nav">
+        <a class="nav-link active" href="#inicio" id="nav-home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></svg>Inicio</a>
+        <a class="nav-link" href="#semanas" id="nav-weeks"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg>Programación <span class="nav-tag">52</span></a>
+        <button class="nav-link" id="nav-archive" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="5" rx="1"/><path d="M6 9v11h12V9M10 14h4"/></svg>Archivo de semanas</button>
+        <button class="nav-link" id="nav-subscription" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16v12H4zM2 8l3-5h14l3 5M9 8v12M9 12l3-2 3 2"/></svg>Mi suscripción</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-feature"><span class="eyebrow"><span class="mini-spark">✳</span> TU SIGUIENTE NIVEL</span><strong>Cada sesión<br>cuenta.</strong><p>Una temporada completa de programación, siempre a mano.</p><button id="sidebar-upgrade" type="button">Descubrir Pro <span aria-hidden="true">↗</span></button></div>
+        <div class="sidebar-meta"><span class="online-dot"></span> PLATAFORMA OPERATIVA <span class="sidebar-version">v 2.6</span></div>
+      </div>
+    </aside>
+    <div class="page" id="inicio">
+      <header class="topbar">
+        <div class="breadcrumbs"><span>MI ESPACIO</span><span class="crumb-chevron">/</span><strong>PROGRAMACIÓN</strong></div>
+        <div class="top-actions"><span class="season-label">TEMPORADA 2026/27</span><button class="account-chip" type="button" id="account-chip" aria-label="Consultar mi plan"><span class="account-avatar">A</span><span>Plan Starter</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></div>
+      </header>
+      <main class="main">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-inner">
+            <div class="hero-eyebrow"><span class="eyebrow-line"></span> TRAIN SMART. GET STRONGER.</div>
+            <h1 id="hero-title">El trabajo se hace<br><em>cada semana.</em></h1>
+            <p>Tu programación de CrossFit, en un solo sitio. Planifica tus sesiones, mantén el ritmo y sigue avanzando.</p>
+            <button class="hero-cta" id="hero-cta" type="button">Ver entreno de esta semana <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+          </div>
+          <div class="hero-illustration" aria-hidden="true"><div class="hero-circle hero-circle-a"></div><div class="hero-circle hero-circle-b"></div><div class="hero-watermark">CF<span>+</span></div><div class="hero-barbell"><span class="weight-outer"></span><span class="weight-inner"></span><span class="weight-bar"></span><span class="weight-inner"></span><span class="weight-outer"></span></div><div class="hero-caption">THE WORK NEVER STOPS <span>↗</span></div></div>
+          <div class="hero-index">01 <span>/</span> 03</div>
+        </section>
+        <div class="stats" aria-label="Resumen de la programación">
+          <div class="stat"><span class="stat-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg></span><div><strong>52 <small>semanas</small></strong><span>Programación de temporada</span></div></div>
+          <div class="stat"><span class="stat-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16M8 16l4-5 3 2 4-7"/></svg></span><div><strong>5 <small>días / semana</small></strong><span>Sesiones estructuradas</span></div></div>
+          <div class="stat"><span class="stat-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l4 4v14H4V3zM16 3v5h4M8 13h8M8 17h6"/></svg></span><div><strong>PDF <small>semanal</small></strong><span>Formato listo para consultar</span></div></div>
+        </div>
+        <section class="section-header" id="semanas"><div><div class="section-kicker">TU PLAN DE ENTRENAMIENTO</div><h2>Programación semanal<span class="lime-dot">.</span></h2><p>Encuentra la semana que buscas y consulta tu plan completo.</p></div><div class="section-counter"><span class="counter-dot"></span> TEMPORADA 2026/27</div></section>
+        <section class="content-grid">
+          <div class="weeks-column">
+            <div class="toolbar"><label class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><input id="week-search" type="search" placeholder="Buscar semana..." aria-label="Buscar semana" autocomplete="off"></label><label class="month-field"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v4M17 3v4M3 10h18"/><rect x="3" y="5" width="18" height="16" rx="2"/></svg><select id="month-filter" aria-label="Filtrar por mes"><option value="all">Todos los meses</option></select><svg class="select-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></label></div>
+            <div class="list-heading"><strong id="list-heading">Todas las semanas</strong><span id="week-counter">52 documentos</span></div>
+            <div class="weeks-grid" id="weeks-grid" aria-live="polite"></div>
+            <div class="empty-state" id="empty-state" hidden><strong>No se han encontrado semanas</strong><p>Prueba con otro número o cambia el mes.</p></div>
+            <button class="show-more" id="show-more" type="button">Ver todas las semanas <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+          </div>
+          <aside class="preview-card" aria-labelledby="preview-title">
+            <div class="preview-head"><div><div class="preview-kicker">DOCUMENTO DE LA SEMANA</div><h3 id="preview-title">Semana <span id="preview-week">11</span></h3><p id="preview-date">2 – 8 noviembre 2026</p></div><div class="preview-pdf-tag">PDF <span>↗</span></div></div>
+            <div class="preview-window"><div class="preview-sheet"><img src="./assets/program-preview.svg" alt="" aria-hidden="true" draggable="false"></div><div class="preview-shade"></div><div class="preview-padlock"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><div class="preview-locked"><strong>Vista previa protegida</strong><span>Contenido exclusivo para miembros</span></div></div>
+            <div class="preview-includes"><div class="include-heading">DENTRO DE CADA SEMANA</div><div class="include-row"><span><i>01</i> Movilidad y activación</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></div><div class="include-row"><span><i>02</i> Técnica y fuerza</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></div><div class="include-row"><span><i>03</i> WOD y accesorios</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></div></div>
+            <button class="preview-button" type="button" id="preview-open">Abrir PDF completo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+            <div class="preview-footnote"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 7v5c0 5 3.2 8 8 10 4.8-2 8-5 8-10V7zM9 12l2 2 4-4"/></svg> Acceso seguro para miembros</div>
+          </aside>
+        </section>
+        <footer class="footer"><span>© 2026 CrossFit Plus. Todos los derechos reservados.</span><span>DISCIPLINA · CONSTANCIA · PROGRESO</span></footer>
+      </main>
+    </div>
+  </div>
+  <div id="loader" class="loading-overlay" hidden role="status" aria-live="polite"><div class="loading-card"><div class="loading-ring"></div><strong>Preparando tu documento</strong><p>Validando acceso a la programación semanal...</p><div class="loading-track"><span></span></div></div></div>
+  <div class="modal-backdrop" id="paywall" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="paywall-title" aria-describedby="paywall-description" tabindex="-1"><button class="modal-close" id="close-modal" type="button" aria-label="Cerrar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6 18 18M18 6 6 18"/></svg></button><div class="modal-top"><div class="pro-icon"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="m10 31 14-19 14 19M17 31V21m14 10V21M8 36h32" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="paywall-kicker">CROSSFIT PLUS <span>PRO</span></div><h2 id="paywall-title">Tu próxima sesión<br>empieza aquí<span>.</span></h2><p id="paywall-description">Desbloquea la <strong id="paywall-week">Semana 11</strong> y accede a toda tu programación, sin límites.</p><div class="protected-doc"><span class="doc-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l4 4v16H6zM15 2v5h4M9 13h6M9 17h6"/></svg></span><span><strong id="protected-filename">Semana_11_Programacion.pdf</strong><small>Documento de acceso exclusivo</small></span><span class="doc-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span></div></div><div class="modal-bottom"><div class="features-title">TODO LO QUE INCLUYE PLUS PRO</div><div class="pro-feature"><span class="checkmark">✓</span>Acceso a las 52 semanas de entrenamiento</div><div class="pro-feature"><span class="checkmark">✓</span>Programación completa de lunes a viernes</div><div class="pro-feature"><span class="checkmark">✓</span>Consulta y descarga de tus documentos PDF</div><div class="plan-price-box"><div class="plan-price-info"><span class="plan-name">Suscripción mensual <span class="popular-badge">MÁS ELEGIDA</span></span><span class="plan-subtitle">Acceso completo · Cancela cuando quieras</span></div><div class="price"><strong>30 €</strong><small>/mes</small></div></div><button class="subscribe" type="button" id="subscribe">Activar CrossFit Plus Pro <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button><div class="modal-caption"><span>Cancelación flexible</span><span>·</span><button type="button" id="restore">Restaurar compra</button></div></div></section></div>
+  <div id="toast" class="toast" hidden role="status" aria-live="polite"></div>
+</body>
+</html>
